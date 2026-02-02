@@ -187,6 +187,7 @@ with col2:
     st.pyplot(fig)
 
 # Visualisasi revenue vs quantity
+st.subheader("Revenue vs Quantity")
 fig, ax = plt.subplots(figsize=(20, 9))
 sns.set_style("whitegrid")
 # Visualisasi dalam bentuk scatterplot
@@ -237,6 +238,7 @@ plt.text(
 plt.tight_layout()
 st.pyplot(fig)
 
+st.subheader("RFM Analysis")
 col3, col4 = st.columns(2)
 with col3:
     fig, ax = plt.subplots(figsize=(10, 6))
