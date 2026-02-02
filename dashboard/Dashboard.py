@@ -117,7 +117,9 @@ max_date = all_df["order_purchase_timestamp"].max()
 with st.sidebar:
     # Logo
     st.header("Filter Data")
-    st.image("logo.png", width=95)
+
+    logo_path = os.path.join(current_dir, "logo.png")
+    st.image(logo_path, width=95)
     # Input date
     try:
         start_date, end_date = st.date_input(
