@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from matplotlib.ticker import FuncFormatter
+import os
 
 sns.set(style="dark")
 
@@ -99,6 +100,8 @@ def create_rfm_df(df):
 
 
 # Load data
+current_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(current_dir, "all_data.csv")
 all_df = pd.read_csv("all_data.csv")
 
 # Filtering tanggal
