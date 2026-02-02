@@ -102,7 +102,7 @@ def create_rfm_df(df):
 # Load data
 current_dir = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(current_dir, "all_data.csv")
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv(csv_path)
 
 # Filtering tanggal
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
